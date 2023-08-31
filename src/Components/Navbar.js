@@ -14,9 +14,9 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { blue } from "@mui/material/colors";
 const Navbar = () => {
   return (
-    <div className="bg-blue-600 py-2  px-4 flex items-center justify-center">
+    <div className="bg-blue-600 py-2   px-4 flex sm:flex-col items-center justify-center">
       {/* Logo */}
-      <img src={Logo} alt="Flipkart Logo" className="h-10 mx-4 " />
+      <img src={Logo} alt="Flipkart Logo" className="h-10 w-12 sm:w-10 md:w-20 lg:w-24 mx-4 " />
 
       {/* Search */}
       <div className="flex items-center w-1/3 bg-white  px-2 mx-4 relative">

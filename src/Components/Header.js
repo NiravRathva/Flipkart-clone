@@ -10,57 +10,57 @@ import twoWheeler from "../Images/two wheelers.webp";
 const Header = () => {
   return (
     <div>
-      <ul>
-        <li>
-          <figure>
+      <ul className="flex justify-center">
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={grocery} alt="" />
             <figcaption>Grocery </figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={mobile} alt="" />
             <figcaption>Mobile</figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={fashion} alt="" />
             <figcaption>Fashion</figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={electonic} alt="" />
             <figcaption>Electrinic</figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={furniture} alt="" />
             <figcaption>Home & furniture</figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={appliance} alt="" />
             <figcaption>Appliances</figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={travel} alt="" />
             <figcaption>Travel</figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={beauty} alt="" />
             <figcaption>Beauty, toys & more </figcaption>
           </figure>
         </li>
-        <li>
-          <figure>
+        <li className="mx-2">
+          <figure className="text-center">
             <img src={twoWheeler} alt="" />
             <figcaption>Two wheelers</figcaption>
           </figure>
