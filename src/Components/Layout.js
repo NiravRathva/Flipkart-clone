@@ -7,7 +7,7 @@ const Layout = (WrappedComponent) => {
   return (props) => (
     <div>
       <Navbar />
-      <Header />
+      
       <WrappedComponent {...props} />
     </div>
   );

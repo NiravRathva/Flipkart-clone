@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../Components/Layout";
 import ProductSlider from "../Components/ProductSlider";
 import { data1, data2, data3 } from "../SliderData";
-
+import Header from "../Components/Header";
 const Home = () => {
   const settings1 = {
     dots: false,
@@ -24,15 +24,13 @@ const Home = () => {
   };
   const title = ["Best Of Electronic", "Home decor and Furnishing"];
   return (
-    <div className="grid grid-cols-1 gap-4 my-4" >
-      <ProductSlider data={data1} settings={settings1} />
-      <ProductSlider data={data2} settings={settings2} Title={title[0]} />
-      <ProductSlider
-        data={data3}
-        settings={settings2}
-        Title={title[1]}
-     
-      />
+    <div>
+        <Header />
+      <div className="grid grid-cols-1 gap-4 my-4">
+        <ProductSlider data={data1} settings={settings1} />
+        <ProductSlider data={data2} settings={settings2} Title={title[0]} />
+        <ProductSlider data={data3} settings={settings2} Title={title[1]} />
+      </div>
     </div>
   );
 };
