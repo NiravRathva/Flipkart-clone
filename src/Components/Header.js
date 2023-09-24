@@ -9,7 +9,7 @@ import beauty from "../Images/beaty.webp";
 import twoWheeler from "../Images/two wheelers.webp";
 const Header = () => {
   return (
-    <div>
+    <div> 
       <ul className="flex justify-center">
         <li className="mx-2">
           <figure className="text-center">

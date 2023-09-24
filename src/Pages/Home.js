@@ -1,15 +1,16 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Header from "../Components/Header";
+/* eslint-disable no-unused-vars */
+import Layout from "../Components/Layout";
 import ProductSlider from "../Components/ProductSlider";
+import Header from "../Components/Header";
+
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Header />
-      <ProductSlider />
+       <Header />
+      {/* <ProductSlider /> */}
     </div>
   );
 };
 
-export default Home;
+export default Layout(Home);
