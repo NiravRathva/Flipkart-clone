@@ -1,52 +1,29 @@
 import Slider from "react-slick";
-import { Carousel } from "react-responsive-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const ProductSlider = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-  };
+import "../index.css"
+const ProductSlider = ({ data, settings, Title }) => {
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 2000,
+  //   autoplaySpeed: 2000,
+  //   cssEase: "linear",
+  // };
   return (
-    <div className="mx-auto w-11/12">
+    <div className="mx-auto w-11/12 shadow-md p-4 rounded-lg bg-gray-200">
+      <h3 className="text-2xl font-bold mb-4">{Title}</h3>
       <Slider {...settings}>
-        <div className="p-2">
-          <img
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4529fd434a85c683.jpg?q=20"
-            alt=""
-          />
-        </div>
-        <div className="p-2">
-          <img
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/7961400ee1bd2961.jpg?q=20"
-            alt=""
-          />
-        </div>
-        <div className="p-2">
-          <img
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/89c26b04d640c7a9.jpg?q=20"
-            alt=""
-          />
-        </div>
-        <div className="p-2">
-          <img
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/0819129bd1a3c342.jpg?q=20"
-            alt=""
-          />
-        </div>
-        <div className="p-2">
-          <img
-            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8a89ee09acc1a9e5.jpg?q=20"
-            alt=""
-          />
-        </div>
+        {data.map((item, index) => (
+          <div className="p-2" key={index}>
+            <img src={item.Image} alt="" />
+            <h4 className="text-lg font-semibold">{item.name}</h4>
+            <h6 className="text-sm mt-2">{item.offer}</h6>
+          </div>
+        ))}
       </Slider>
     </div>
   );
