@@ -1,5 +1,5 @@
 import Layout from "../Components/Layout"
-
+import { Link } from "react-router-dom"
 const Signup = () => {
     return (
         <div className=" flex mx-auto  lg:w-7/12 md:9/12 justify-center items-center my-8 h-[80vh]">
@@ -31,12 +31,13 @@ const Signup = () => {
                         >
                             Continue
                         </button>
-                        <button
-                            className="w-full  text-blue-600 bg-gray-100 py-2 px-4 rounded-md focus:outline-none  hover:shadow-md"
-                            type="submit"
-                        >
-                            Existing User? Login
-                        </button>
+                        <Link to="/login">
+                            <button
+                                className="w-full  text-blue-600 bg-gray-100 py-2 px-4 rounded-md focus:outline-none  hover:shadow-md"
+                                type="submit"
+                            >
+                                Existing User? Login
+                            </button></Link>
                     </form>
                 </div>
 
