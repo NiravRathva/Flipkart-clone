@@ -2,67 +2,111 @@ import mobile from "../Images/mobiles.webp";
 import grocery from "../Images/grocery.webp";
 import fashion from "../Images/fashion.webp";
 import electonic from "../Images/electronic.webp";
-import furniture from "../Images/home & furniture.webp";
+import furniture from "../Images/home & furniture.png";
 import appliance from "../Images/appliance.webp";
 import travel from "../Images/travel.webp";
 import beauty from "../Images/beaty.webp";
 import twoWheeler from "../Images/two wheelers.webp";
+import useWindowResize from "../Util/showIcon";
 const Header = () => {
+  const showIconOnly = useWindowResize();
   return (
-    <div> 
-      <ul className="flex justify-center">
-        <li className="mx-2">
+    <div className="bg-gray-200">
+      <ul className="flex justify-around">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={grocery} alt="" />
-            <figcaption>Grocery </figcaption>
+            <img
+              src={grocery}
+              alt=""
+              className="w-16 sm:w-20 md:w-16 lg:w-32"
+            />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && "Grocery"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={mobile} alt="" />
-            <figcaption>Mobile</figcaption>
+            <img src={mobile} alt="" className="w-16 sm:w-20 md:w-16 lg:w-32" />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+               {!showIconOnly && "Mobile"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={fashion} alt="" />
-            <figcaption>Fashion</figcaption>
+            <img
+              src={fashion}
+              alt=""
+              className="w-16 sm:w-20 md:w-16 lg:w-32"
+            />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && "Fashion"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={electonic} alt="" />
-            <figcaption>Electrinic</figcaption>
+            <img
+              src={electonic}
+              alt=""
+              className="w-16 sm:w-20 md:w-16 lg:w-32"
+            />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && "Electrinic"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={furniture} alt="" />
-            <figcaption>Home & furniture</figcaption>
+            <img
+              src={furniture}
+              alt=""
+              className="w-16 sm:w-20 md:w-16 lg:w-32"
+            />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && " Home & furniture "}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={appliance} alt="" />
-            <figcaption>Appliances</figcaption>
+            <img
+              src={appliance}
+              alt=""
+              className="w-16 sm:w-20 md:w-16 lg:w-32"
+            />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && "Appliances"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={travel} alt="" />
-            <figcaption>Travel</figcaption>
+            <img src={travel} alt="" className="w-16 sm:w-20 md:w-16 lg:w-32" />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && "Travel"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={beauty} alt="" />
-            <figcaption>Beauty, toys & more </figcaption>
+            <img src={beauty} alt="" className="w-16 sm:w-20 md:w-16 lg:w-32" />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && "Beauty, toys & more"}
+            </figcaption>
           </figure>
         </li>
-        <li className="mx-2">
+        <li className="lg:mx-2">
           <figure className="text-center">
-            <img src={twoWheeler} alt="" />
-            <figcaption>Two wheelers</figcaption>
+            <img
+              src={twoWheeler}
+              alt=""
+              className="w-16 sm:w-20 md:w-16 lg:w-32"
+            />
+            <figcaption className="text-sm sm:text-base md:text-lg lg:text-xl">
+              {!showIconOnly && " Two wheelers "}
+            </figcaption>
           </figure>
         </li>
       </ul>

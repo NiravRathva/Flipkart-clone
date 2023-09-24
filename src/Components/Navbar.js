@@ -16,23 +16,14 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import { useState, useEffect } from "react";
 import logo2 from "../Images/logo2.png";
+import useWindowResize from "../Util/showIcon";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showIconOnly, setShowIconOnly] = useState(window.innerWidth <= 644);
+  const showIconOnly = useWindowResize();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  useEffect(() => {
-    const handleResize = () => {
-      setShowIconOnly(window.innerWidth <= 644);
-    };
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <nav className="bg-blue-600 ">
       <div className=" py-2 container mx-auto  px-4 flex  items-center justify-center">
@@ -135,7 +126,8 @@ const Navbar = () => {
             Become a Seller
           </a>
           {/* more button  */}
-          <a href="#" className="text-white group relative hidden lg:block">More
+          <a href="#" className="text-white group relative hidden lg:block">
+            More
             {/* More more dropdown */}
             <div
               className={`hidden group-hover:block absolute mt-2 w-52 flex flex-col bg-white border border-gray-300 rounded-lg py-2 px-4 text-black `}
@@ -176,7 +168,7 @@ const Navbar = () => {
             </div>
           </a>
           <a href="#" className="text-white">
-            <ShoppingCartIcon /> {!showIconOnly && "Search"}
+            <ShoppingCartIcon /> {!showIconOnly && "Cart"}
           </a>
         </div>
       </div>
