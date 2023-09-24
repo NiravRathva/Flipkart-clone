@@ -1,49 +1,51 @@
 import Slider from "react-slick";
+import { Carousel } from "react-responsive-carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ProductSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
-
   return (
-    <div>
-      <h2>Featured Products</h2>
+    <div className="mx-auto w-11/12">
       <Slider {...settings}>
-        <div className="product-slide">
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/9cc71e2f6e4f027b.jpg?q=50" alt="Product" />
-          <h3>Laptop</h3>
-          <p>Product Description</p>
-          <button>Add to Cart</button>
+        <div className="p-2">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4529fd434a85c683.jpg?q=20"
+            alt=""
+          />
         </div>
-        <div className="product-slide">
-          <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/84ae27f93c14a4e3.jpg?q=50" alt="Product" />
-          <h3>Product Name</h3>
-          <p>Product Description</p>
-          <button>Add to Cart</button>
+        <div className="p-2">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/7961400ee1bd2961.jpg?q=20"
+            alt=""
+          />
+        </div>
+        <div className="p-2">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/89c26b04d640c7a9.jpg?q=20"
+            alt=""
+          />
+        </div>
+        <div className="p-2">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/0819129bd1a3c342.jpg?q=20"
+            alt=""
+          />
+        </div>
+        <div className="p-2">
+          <img
+            src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8a89ee09acc1a9e5.jpg?q=20"
+            alt=""
+          />
         </div>
       </Slider>
     </div>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 function App() {
   return (
-    <div className="App bg-blue-600">
+    <div className="App bg-blue-400">
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>

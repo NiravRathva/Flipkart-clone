@@ -5,8 +5,7 @@ import ProductSlider from "../Components/ProductSlider";
 import Header from "../Components/Header";
 
 const Home = () => {
- 
-  return <div>{/* <ProductSlider /> */}</div>;
+  return <div>{<ProductSlider />}</div>;
 };
 
 export default Layout(Home);
