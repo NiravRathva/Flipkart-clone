@@ -14,7 +14,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { blue } from "@mui/material/colors";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import logo2 from "../Images/logo2.png";
 import useWindowResize from "../Util/showIcon";
 const Navbar = () => {
