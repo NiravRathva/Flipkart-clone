@@ -2,7 +2,7 @@ import React from "react";
 
 const Filters = () => {
   return (
-    <div className="w-1/5 bg-gray-600 p-4 bg-white">
+    <div className="">
       <div>
         <h4 className="text-black font-bold text-lg">Filters</h4>
       </div>
